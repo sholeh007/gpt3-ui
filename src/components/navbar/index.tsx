@@ -17,7 +17,9 @@ export default function Navbar() {
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
+        <a href="#">
+          <p>Sign in</p>
+        </a>
         <button type="button">Sign up</button>
       </div>
       <div className="gpt3__navbar-menu">
