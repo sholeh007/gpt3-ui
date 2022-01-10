@@ -1,26 +1,7 @@
 import { useState } from "react";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+import Menu from "./menu-links";
 import "./navbar.css";
-
-const Menu = () => (
-  <>
-    <p>
-      <a href="#home">Home</a>
-    </p>
-    <p>
-      <a href="#wgpt3">What is GPT3</a>
-    </p>
-    <p>
-      <a href="#possibility">Open AI</a>
-    </p>
-    <p>
-      <a href="#features">Case Study</a>
-    </p>
-    <p>
-      <a href="#blog">Library</a>
-    </p>
-  </>
-);
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
