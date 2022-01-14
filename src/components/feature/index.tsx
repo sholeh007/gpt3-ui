@@ -1,5 +1,20 @@
 import "./feature.css";
 
-export default function Article() {
-  return <div>Feature</div>;
+interface propType {
+  title: string;
+  text: string;
+}
+
+export default function Feature({ title, text }: propType) {
+  return (
+    <div className="gpt3__features-container__feature">
+      <div className="gpt3__features-container__feature-title">
+        <div />
+        <h1>{title}</h1>
+      </div>
+      <div className="gpt3__features-container__feature-text">
+        <p>{text}</p>
+      </div>
+    </div>
+  );
 }
